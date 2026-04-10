@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dev Detective 🔍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🔍 Dev Detective</h1>
+
+<!-- Toggle -->
+<button onclick="toggleMode()">Switch Mode</button>
+
+<!-- Single Search -->
+<div id="singleMode">
+    <input type="text" id="username" placeholder="Enter GitHub Username">
+    <button onclick="searchUser()">Search</button>
+</div>
+
+<!-- Battle Mode -->
+<div id="battleMode" style="display:none;">
+    <input type="text" id="user1" placeholder="User 1">
+    <input type="text" id="user2" placeholder="User 2">
+    <button onclick="battle()">Battle ⚔️</button>
+</div>
+
+<p id="loading"></p>
+
+<!-- Results -->
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
